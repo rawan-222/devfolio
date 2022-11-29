@@ -1,0 +1,198 @@
+html{--font-family:system-ui,"Segoe UI","Helvetica Neue","Noto Sans","Liberation Sans",Arial,sans-serif;
+    --maincolor:#0078ff;}
+body{font-family: var(--font-family);}
+.mynav{justify-content: space-around;display: flex;z-index: 999;position: fixed;display: flex;margin-left: auto;}
+.nav1{width: 80%;}
+.navhome{position: relative;}
+.navhome::after{content: ""; width: 45%;height: 2px;background-color: white;position: absolute;top: 100%;left: 20%;}
+.nav-con{position: relative;margin-left: 15px;}
+.nav-con::after{ content: ""; width: 0%; height: 2px; background-color: white; position: absolute; top: 100%; left: 20%; transition:0.5s all ; -webkit-transition:0.5s all ; -moz-transition:0.5s all ; -ms-transition:0.5s all ; -o-transition:0.5s all ; }
+.nav-con:hover::after{content: "";width: 45%;}
+.d-d{ color: black; transition:0.5s all ; -webkit-transition:0.5s all ; -moz-transition:0.5s all ; -ms-transition:0.5s all ; -o-transition:0.5s all ; }
+.d-d:hover{color: var(--maincolor);}
+.nav-icon{color: white;background-color: white;}
+.icon9{width: 40px;height: 40px;background-color: var(--maincolor);color: white;text-align: center;padding-top: 5px;position: fixed;right: 1%;bottom: 3%;z-index: 9999;}
+.home{background-image: url(../images/hero-bg.jpg);background-size: cover;background-attachment: fixed;}
+.homecon h1{position: relative;font-size: 4.5rem;}
+.homecon h1::after{ content: ""; animation:headcon 13s infinite; -webkit-animation:headcon 13s infinite; position: absolute; top:130% ; left:35%; font-size: 3rem; }
+@keyframes headcon {
+    0%{content: "|";}
+    1%{content: "D|";}
+    2%{content: "De|";}
+    4%{content: "Des|";}
+    6%{content: "Desi|";}
+    8%{content: "Desig|";}
+    10%{content: "Design|";}
+    12%{content: "Designe|";}
+    14%{content: "Designer|";}
+    15%{content: "Designer";}
+    16%{content: "Designer|";}
+    17%{content: "Designer";}
+    18%{content: "Designe|";}
+    19%{content: "Design|";}
+    20%{content: "Design|";}
+    21%{content: "Desig|";}
+    22%{content: "Desi|";}
+    23%{content: "Des|";}
+    24%{content: "De|";}
+    26%{content: "Dev|";}
+    28%{content: "Devo|";}
+    30%{content: "Devol|";}
+    32%{content: "Devolp|";}
+    33%{content: "Devolpe|";}
+    34%{content: "Devolper|";}
+    35%{content: "Devolper";}
+    36%{content: "Devolper|";}
+    37%{content: "Devolper";}
+    38%{content: "Devolpe|";}
+    39%{content: "Devolp|";}
+    40%{content: "Devol|";}
+    41%{content: "Devo|";}
+    42%{content: "Dev|";}
+    43%{content: "De|";}
+    44%{content: "De|";}
+    45%{content: "D|";}
+    46%{content: "|";}
+    47%{content: "F|";}
+    48%{content: "Fr|";}
+    49%{content: "Fre|";}
+    50%{content: "Free|";}
+    51%{content: "Freel|";}
+    52%{content: "Freela|";}
+    53%{content: "Freelan|";}
+    54%{content: "Freelanc|";}
+    55%{content: "Freelance|";}
+    56%{content: "Freelancer|";}
+    57%{content: "Freelancer";}
+    58%{content: "Freelancer|";}
+    59%{content: "Freelancer";}
+    60%{content: "Freelancer|";}
+    61%{content: "Freelance|";}
+    62%{content: "Freelanc|";}
+    63%{content: "Freelan|";}
+    64%{content: "Freela|";}
+    65%{content: "Freel|";}
+    66%{content: "Free|";}
+    67%{content: "Fre|";}
+    68%{content: "Fr|";}
+    70%{content: "F|";}
+    71%{content: "F|";}
+    72%{content: "|";}
+    73%{content: "P|";}
+    74%{content: "Ph|";}
+    75%{content: "Pho|";}
+    76%{content: "Phot|";}
+    77%{content: "Photo|";}
+    78%{content: "Photog|";}
+    79%{content: "Photogr|";}
+    80%{content: "Photogra|";}
+    81%{content: "Photograp|";}
+    82%{content: "Photograph|";}
+    83%{content: "Photographer|";}
+    84%{content: "Photographer";}
+    85%{content: "Photographer|";}
+    86%{content: "Photographer";}
+    87%{content: "Photographer|";}
+    88%{content: "Photographer";}
+    89%{content: "Photographe|";}
+    90%{content: "Photograph|";}
+    91%{content: "Photograp|";}
+    92%{content: "Photogra|";}
+    93%{content: "Photogr|";}
+    94%{content: "Photog|";}
+    95%{content: "Photo|";}
+    96%{content: "Phot|";}
+    97%{content: "Pho|";}
+    98%{content: "Ph|";}
+    99%{content: "P|";}
+    100%{content: "|";}
+}
+.skillrate{height: 12px;}
+.about{background-color: #f5f5f5;}
+.abouthead{position: relative;}
+.abouthead::after{content: "";height: 3px;width: 105px;position: absolute; top: 100%;background-color:var(--maincolor);left: 0;}
+.serhead{position: relative;}
+.serhead::after{content: ""; width: 50px;height: 5px;position: absolute;top: 115%;background-color: var(--maincolor);left: 48%;}
+.services{background-color: #f5f5f5;}
+.serhead h2{font-size: 3rem;color: black;}
+.icon{ border: 10px solid var(--maincolor); padding: 35px; background-color: transparent; color: #1e1e1e; transition: 0.5s all; -webkit-transition: 0.5s all; -moz-transition: 0.5s all; -ms-transition: 0.5s all; -o-transition: 0.5s all; }
+.ser-con:hover .icon{background-color: #0078ff;color: white;border: 10px solid #cde1f8;}
+.dev1{background-image: url(../images/counters-bg.jpg);height: 60vh;background-size: 100% 100%;background-attachment: fixed;position: relative;}
+.layer2{position: absolute;top: 0;bottom: 0;left: 0;right: 0;background-color: rgba(0, 120, 255,0.65);}
+.icon2{border: 10px solid #cde1f8;position: relative; width: 70px;height: 70px;}
+.icon2::after{ content: "450"; position: absolute; top: 120%; color: white; font-size: 2rem; left: 0; animation:icon2 1s 1 ; -webkit-animation:icon2 1s 1 ; }
+.icon3{border: 10px solid #cde1f8;position: relative; width: 70px;height: 70px;}
+.icon3::after{ content: "25"; position: absolute; top: 120%; color: white; font-size: 2rem; left: 15%; animation:icon3 1s 1 ; -webkit-animation:icon3 1s 1 ; }
+.icon4{border: 10px solid #cde1f8;position: relative; width: 70px;height: 70px;}
+.icon4::after{ content:"550"; position: absolute; top: 120%; color: white; font-size: 2rem; left: 0; animation:icon4 1s 1 ; -webkit-animation:icon4 1s 1 ; }
+.icon5{border: 10px solid #cde1f8;position: relative; width: 70px;height: 70px;}
+.icon5::after{ content: "48"; position: absolute; top: 120%; color: white; font-size: 2rem; left: 0; animation: icon5 1s 1; -webkit-animation: icon5 1s 1; }
+@keyframes icon2 {
+    0%{content: "100";}
+    20%{content: "200";}
+    40%{content: "300";}
+    60%{content: "350";}
+    80%{content: "400";}
+    100%{content: "450";}
+    
+}
+@keyframes icon3 {
+    0%{content: "1";}
+    20%{content: "10";}
+    40%{content: "15";}
+    60%{content: "16";}
+    80%{content: "20";}
+    100%{content: "25";}
+    
+}
+@keyframes icon4 {
+    0%{content: "100";}
+    20%{content: "200";}
+    40%{content: "300";}
+    60%{content: "350";}
+    80%{content: "450";}
+    100%{content: "550";}
+    
+}
+@keyframes icon5 {
+    0%{content: "10";}
+    20%{content: "20";}
+    40%{content: "30";}
+    60%{content: "35";}
+    80%{content: "40";}
+    100%{content: "48";}
+    
+}
+.work-con span{color:#0078ff;}
+
+.work-con img{ transform:scale(1) ; -webkit-transform:scale(1) ; -moz-transform:scale(1) ; -ms-transform:scale(1) ; -o-transform:scale(1) ; transition: 0.75s all; -webkit-transition: 0.75s all; -moz-transition: 0.75s all; -ms-transition: 0.75s all; -o-transition: 0.75s all; }
+.work-con img:hover{ transform:scale(1.3) ; -webkit-transform:scale(1.3) ; -moz-transform:scale(1.3) ; -ms-transform:scale(1.3) ; -o-transform:scale(1.3) ; }
+.plus{color: #0078ff;border: 2px solid #0078ff;width: 40px;height: 40px; display: flex;justify-content: center;align-items: center;text-align: center;}
+.work{background-color: #f5f5f5;}
+.dev3{background-image:url(../images/overlay-bg.jpg);background-size: 100% 100%;position: relative;height: 75vh;background-attachment: fixed;}
+.icon7{position: absolute;top: 110%;left: 42%;z-index: 99;}
+.dev3{position:relative;}
+.icon6{position: absolute;top:110%;left:44%;}
+.blog{background-color: #f5f5f5;padding-bottom:50px ;}
+.blog-img2{width: 30px;height: 30px;}
+.blog-img{position: relative;}
+.dev4{position: absolute;top: 93%;background-color:var(--maincolor);left: 38%;font-size: 0.75rem;color: white;padding:5px 17px;}
+.card-footer a{ color: black; transition:0.5s all ; -webkit-transition:0.5s all ; -moz-transition:0.5s all ; -ms-transition:0.5s all ; -o-transition:0.5s all ; }
+.card-footer a:hover{color:var(--maincolor)}
+.card-body a{ color: black; transition:0.65s all ; -webkit-transition:0.65s all ; -moz-transition:0.65s all ; -ms-transition:0.65s all ; -o-transition:0.65s all ; }
+.card-body a:hover{color: var(--maincolor);}
+.contact{background-image: url(../images/overlay-bg.jpg);background-size: 100% 100%;background-attachment: fixed;position: relative;height: 100vh;}
+.con-head::after{content: ""; width: 90px;height: 3px;position: absolute;top: 100%;left: 0;background-color: var(--maincolor);}
+.con-head{position: relative;margin-bottom: 35px;}
+.contact-form button{ background-color: #0078ff; border: 4px solid transparent; transition:0.5s all ; -webkit-transition:0.5s all ; -moz-transition:0.5s all ; -ms-transition:0.5s all ; -o-transition:0.5s all ; 
+margin-left: 150px;}
+.contact-form button:hover{background-color:#3393ff;border: 4px solid #cde1f8;}
+li i{color: var(--maincolor);}
+.icon8{ border: 3px solid var(--maincolor); width: 45px; height: 45px; text-align: center; background-color: transparent; transition:1s all ; -webkit-transition:1s all ; -moz-transition:1s all ; -ms-transition:1s all ; -o-transition:1s all ; color: black;
+}
+.contact{height: 100vh;}
+.icon8:hover{border:3px solid #cde1f8 ;background-color: var(--maincolor);color: white;}
+.finish{background-color: #0062d3;}
+@media screen and (max-width:700px) {.contact{height:160vh}
+.icon6{left:46%;} .homecon h1{font-size:2.5rem;font-weight: 600;} .homecon h1::after{ content: ""; left:25%;  }
+}
